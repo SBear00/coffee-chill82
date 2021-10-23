@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 /* 
 1. Vị trí
@@ -19,7 +23,44 @@
     background-color: #000;
 }
 
-#slider {}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a {
+    color: aqua;
+}
+
+#nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+}
+
+#nav .sub-menu li:hover a,
+#nav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .sub-menu {
+    position: absolute;
+    background-color: #fff;
+}
+
+#nav .sub-menu>a {
+    color: #fff;
+    text-align: center;
+}
+
+#slider {
+    min-height: 500px;
+    background-color: #00a2ff;
+}
 
 #container {}
 
